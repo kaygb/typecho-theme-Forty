@@ -72,6 +72,12 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* 增强 */
+.inner img {
+    max-width: 100%;
+    min-width: 50%;
+}
+
 /* Basic */
 
 	@-ms-viewport {

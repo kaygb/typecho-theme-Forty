@@ -2,6 +2,10 @@
 //文章列表
 ?>
 
+<?php $this->need('inc/banner.php'); ?>
+
+        <div class="main">
+
  <!-- One -->
  <section id="one" class="tiles">
 
