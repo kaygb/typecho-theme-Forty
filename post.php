@@ -12,7 +12,7 @@
                             <div class="inner">
                             <?php $this->content(); ?>
 
-                                
+                            <span itemprop="keywords" class="button">TAGS : <?php $this->tags(' ', true, ''); ?></span>
                             </div>
                         </section>
 

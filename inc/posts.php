@@ -21,7 +21,7 @@
                         <h2><a href="<?php $this->permalink() ?>" class="link"><?php $this->title() ?></a></h2>
 
                         
-                        <p><?php $this->excerpt(100,''); ?></p>
+                        <p><?php $this->excerpt(50,''); ?></p>
                         <time datetime="<?php $this->date('c'); ?>"  class="button small"><?php $this->date(); ?></time>
                     </header>
                 </article>
