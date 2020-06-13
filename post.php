@@ -8,13 +8,14 @@
         <div id="main" class="alt">
 
 						<!-- One -->
-							<section id="one">
-								<div class="inner">
-                                <?php $this->content(); ?>
+                        <section id="one">
+                            <div class="inner">
+                            <?php $this->content(); ?>
 
-									
-								</div>
-							</section>
+                                
+                            </div>
+                        </section>
 
-					</div>
+                    </div>
+
 <?php $this->need('inc/footer.php'); ?>
