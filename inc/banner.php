@@ -42,9 +42,11 @@
                 <!-- <div class="content">
                     <p>Lorem ipsum dolor sit amet nullam consequat<br /> sed veroeros. tempus adipiscing nulla.</p> -->
                     <time datetime="<?php $this->date('c'); ?>"  class="button small"><?php $this->date(); ?></time>
-                    <span class="button small">
-                    <?php $this->category(','); ?>
-                    </span>
+                    <?php if($this->category(',')): ?>>
+                        <span class="button small">
+                        <?php $this->category(','); ?>
+                        </span>
+                    <?php endif;?>
                 </div>
             </div>
         </section>

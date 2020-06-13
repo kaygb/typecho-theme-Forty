@@ -14,9 +14,17 @@
         <!-- Menu -->
         <nav id="menu">
             <ul class="links">
-                <li><a href="<?php $this->options->siteUrl(); ?>">Home</a></li>
-                <li><a href="landing.html">Landing</a></li>
-                <li><a href="about.html">关于</a></li>
+                <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
+                <?php 
+                            $this->widget('Widget_Contents_Page_List')->to($pages);?>
+                            <?php while($pages->next()): ?>
+                                <li>
+                                    <a <?php if($this->is('page', $pages->slug)): ?> <?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
+                                </li>
+                                <!-- <?php echo ("<script>alert(\"非隐藏页面\")</script>");?> -->
+                            <?php endwhile; ?>
+
+                
                 <!-- <li><a href="elements.html">Elements</a></li> -->
             </ul>
             <ul class="actions stacked">

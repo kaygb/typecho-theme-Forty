@@ -75,7 +75,8 @@ input, select, textarea {
 /* 增强 */
 .inner img {
     max-width: 100%;
-    min-width: 50%;
+	min-width: 50%;
+	margin: auto;
 }
 
 /* Basic */
