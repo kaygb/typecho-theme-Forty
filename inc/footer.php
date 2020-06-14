@@ -15,9 +15,9 @@
                 </ul>
                 <ul class="copyright">
                     <li>&copy; <?php echo Date('Y'); ?>&nbsp;<?php $this->options->title(); ?></li>
-                    <li><a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow">豫ICP备s19002054号-5</a></li>
                     <li>THEME : <a href="https://github.com/kaygb/typecho-theme-Forty" target="_blank" rel="nofollow">Forty</a></li>
                     <li>Design : <a href="http://html5up.net" target="_blank" rel="nofollow">HTML5 UP</a></li>
+                    <?php $this->options->footer(); ?>
                 </ul>
             </div>
         </footer>

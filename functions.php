@@ -38,7 +38,7 @@ function themeConfig($form) {
     $headnav =  new Typecho_Widget_Helper_Form_Element_Textarea('headnav', NULL, NULL, _t('自定义导航栏 <a href="https://wiki.eas1.cn/archives/zh-doc-of-typecho-theme-winds/#toc_10">文档</a>'), _t('输出在导航栏'));
     $form->addInput($headnav);
 
-    $footer =  new Typecho_Widget_Helper_Form_Element_Textarea('footer', NULL, NULL, _t('自定义footer标签内容 <a href="https://wiki.eas1.cn/archives/zh-doc-of-typecho-theme-winds/#toc_11">文档</a>'), _t('输出在底部'));
+    $footer =  new Typecho_Widget_Helper_Form_Element_Textarea('footer', NULL, NULL, _t('自定义footer标签内容like：< li>< a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow">豫ICP备123123号-5< / a></ li>'), _t('输出在底部'));
     $form->addInput($footer);
 
     $windsAd =  new Typecho_Widget_Helper_Form_Element_Textarea('windsAd', NULL, NULL, _t('文章底部广告代码'), _t('在这里填入广告代码，推荐谷歌广告'));
